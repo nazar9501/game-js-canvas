@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MyApp</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/carousel.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+  
+	<body onload="startGame()">
+
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+				<a class="navbar-brand" href="#">MyApp</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="game.html">Game <span class="sr-only">(current)</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main role="main">
+			<div class="container-fluid marketing">
+				
+				<hr class="featurette-divider">
+				
+				<div class="row featurette">
+					<div class="col-md-9 hide-game">
+						<canvas id="myCanvas" width="800" height="480"></canvas>
+						<div id="game-over">
+							<div id="message"></div>
+							<button type="button" class="btn btn-default" id="play-again2Player">Play Again</button>
+						</div>
+					</div>
+					<div class="col-md-9 media-message lead">
+						<p>Sorry, You need screen with min width of 1130px and min height of 550px to play the game.</p>
+					</div>
+					<div class="col-md-3">
+						<p class="lead"><b>Car move with numpad buttons:</b>
+						<br />4 (left) 
+						<br />8 (up)
+						<br />6 (right) 
+						<br />2 (down)</p>
+						<p class="lead"><b>Plane move with buttons:</b>
+						<br />a (left)
+						<br />w (up)
+						<br />d (right)
+						<br /> s (down)</p>
+					</div>
+				</div>
+
+				<hr class="featurette-divider">
+				
+			</div>
+			
+			<footer class="container">
+				<p class="float-right"><a href="#">Back to top</a></p>
+				<p>&copy; 2018 Nazar Kohut</p>
+		  </footer>
+		</main>
+		
+		<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/carVSplane.js"></script>
+	</body>
+</html>
